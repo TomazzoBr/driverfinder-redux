@@ -2,8 +2,21 @@
 
 ## Goals
 
-1.Re-develop driver finder using redux for the state management ❌
+1.Improve driver finder using redux for the state management ❌
 
 2.Improve the database ❌
 
 3.Improve the design of the app ❌
+
+4.Launch the app ❌
+
+
+## Front-end stack
+
+- Create-react-app
+- Redux
+
+## Back-end stack
+
+- NestJS + TypeScript
+- DB with MongoDB + Mongoose
