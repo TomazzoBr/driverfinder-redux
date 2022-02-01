@@ -1,0 +1,3 @@
+[submodule "server/server/df-server"]
+	path = server/server/df-server
+	url = https://github.com/TomazzoBr/driverfinder-redux.git
