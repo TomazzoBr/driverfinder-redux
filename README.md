@@ -20,3 +20,9 @@
 
 - NestJS + TypeScript
 - DB with MongoDB + Mongoose
+
+## Inicializing
+
+Download the directory
+
+run npm i
