@@ -15,11 +15,20 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Nest Works!"', () => {
-      expect(appController.getNest()).toBe('Nest Works!');
+    it('should return "Get company profile"', () => {
+      expect(appController.getCompanyProfile()).toBe('Get company profile');
     });
-    it('should return "{ first: first }"', () => {
-      expect(appController.getSomething()).toBe('{ first: first }');
+    it('should return "Get driver profile"', () => {
+      expect(appController.getDriverProfile()).toBe('Get driver profile');
+    });
+    it('should return "Post company profile"', () => {
+      expect(appController.postCompanyProfile()).toBe('Post company profile');
+    });
+    it('should return "Post driver profile"', () => {
+      expect(appController.postDriverProfile()).toBe('Post driver profile');
+    });
+    it('should return "Post jobs"', () => {
+      expect(appController.postJobs()).toBe('Post jobs');
     });
   });
 });
