@@ -16,7 +16,10 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Nest Works!"', () => {
-      expect(appController.getHello()).toBe('Nest Works!');
+      expect(appController.getNest()).toBe('Nest Works!');
+    });
+    it('should return "{ first: first }"', () => {
+      expect(appController.getSomething()).toBe('{ first: first }');
     });
   });
 });
