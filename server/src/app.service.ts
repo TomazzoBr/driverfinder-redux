@@ -2,19 +2,44 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getCompanyProfile(): string {
-    return 'Get company profile';
+  getCompanyProfile(): object {
+    return {
+      companyName: 'Company name',
+      companyLocation: 'Company location',
+      goodsType: 'Types of goods',
+    };
   }
-  getDriverProfile(): string {
-    return 'Get driver profile';
+  getDriverProfile(): object {
+    return {
+      driverName: 'Driver name',
+      driverLocation: 'Driver location',
+      desiredJob: 'Desired job',
+      availableTime: 'Available time',
+    };
   }
-  postCompanyProfile(): string {
-    return 'Post company profile';
+  postCompanyProfile(): object {
+    return {
+      companyName: 'Company name',
+      companyLocation: 'Company location',
+      goodsType: 'Types of goods',
+    };
   }
-  postDriverProfile(): string {
-    return 'Post driver profile';
+  postDriverProfile(): object {
+    return {
+      driverName: 'Driver name',
+      driverLocation: 'Driver location',
+      desiredJob: 'Desired job',
+      availableTime: 'Available time',
+    };
   }
-  postJobs(): string {
-    return 'Post jobs';
+  postJobs(): object {
+    return {
+      company: 'Company Name',
+      jobName: 'Job Name',
+      size: 'Job size',
+      time: 'Job time',
+      distance: 'Job distance',
+      description: 'Job description',
+    };
   }
 }

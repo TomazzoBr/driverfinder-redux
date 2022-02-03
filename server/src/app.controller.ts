@@ -7,31 +7,31 @@ export class AppController {
 
   @Get()
   @HttpCode(200)
-  getCompanyProfile(): string {
+  getCompanyProfile(): object {
     return this.appService.getCompanyProfile();
   }
 
   @Get()
   @HttpCode(200)
-  getDriverProfile(): string {
+  getDriverProfile(): object {
     return this.appService.getDriverProfile();
   }
 
   @Post()
   @HttpCode(201)
-  postCompanyProfile(): string {
+  postCompanyProfile(): object {
     return this.appService.postCompanyProfile();
   }
 
   @Post()
   @HttpCode(201)
-  postDriverProfile(): string {
+  postDriverProfile(): object {
     return this.appService.postDriverProfile();
   }
 
   @Post()
   @HttpCode(201)
-  postJobs(): string {
+  postJobs(): object {
     return this.appService.postJobs();
   }
 }
