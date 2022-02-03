@@ -5,16 +5,16 @@ export type DriverDocument = Driver & Document;
 
 @Schema()
 export class Driver {
-  @Prop()
+  @Prop({ required: true })
   driverName: string;
 
-  @Prop()
+  @Prop({ required: true })
   driverLocation: string;
 
   @Prop()
   desiredJob: string;
 
-  @Prop()
+  @Prop({ required: true })
   availableTime: string;
 }
 

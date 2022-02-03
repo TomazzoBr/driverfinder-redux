@@ -5,13 +5,13 @@ export type CompanyDocument = Company & Document;
 
 @Schema()
 export class Company {
-  @Prop()
+  @Prop({ required: true })
   companyName: string;
 
-  @Prop()
+  @Prop({ required: true })
   companyLocation: string;
 
-  @Prop()
+  @Prop({ required: true })
   goodsType: string;
 }
 

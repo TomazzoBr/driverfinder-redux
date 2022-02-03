@@ -1,26 +1,32 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import * as mongoose from 'mongoose';
+import { Company } from './companySchema';
 
 export type JobDocument = Job & Document;
 
 @Schema()
 export class Job {
-  @Prop()
-  companyId: string;
+  @Prop({
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Company',
+    required: true,
+  })
+  companyId: Company;
 
-  @Prop()
+  @Prop({ required: true })
   company: string;
 
-  @Prop()
+  @Prop({ required: true })
   jobName: string;
 
-  @Prop()
+  @Prop({ required: true })
   size: string;
 
-  @Prop()
+  @Prop({ required: true })
   time: string;
 
-  @Prop()
+  @Prop({ required: true })
   distance: string;
 
   @Prop()
