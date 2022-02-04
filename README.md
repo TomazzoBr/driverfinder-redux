@@ -15,6 +15,7 @@
 
 - Create-react-app
 - Redux
+- Tailwind
 
 ## Back-end stack
 
