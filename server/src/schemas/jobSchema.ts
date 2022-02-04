@@ -33,4 +33,4 @@ export class Job {
   description: string;
 }
 
-export const CatSchema = SchemaFactory.createForClass(Job);
+export const JobSchema = SchemaFactory.createForClass(Job);

@@ -18,4 +18,4 @@ export class Driver {
   availableTime: string;
 }
 
-export const CatSchema = SchemaFactory.createForClass(Driver);
+export const DriverSchema = SchemaFactory.createForClass(Driver);

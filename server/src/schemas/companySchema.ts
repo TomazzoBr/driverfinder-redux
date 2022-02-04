@@ -19,4 +19,4 @@ export class Company {
   jobs: Job[];
 }
 
-export const CatSchema = SchemaFactory.createForClass(Company);
+export const CompanySchema = SchemaFactory.createForClass(Company);
