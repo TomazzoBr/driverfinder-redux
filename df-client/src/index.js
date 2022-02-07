@@ -1,12 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { CookiesProvider } from "react-cookie";
+import { Provider } from "react-redux";
+import createStore from "./store/store";
+
+const store = createStore;
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <Router>
+      <CookiesProvider>
+        <App />
+      </CookiesProvider>
+    </Router>
+  </Provider>,
   document.getElementById("root")
 );
 
