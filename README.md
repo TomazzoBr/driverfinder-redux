@@ -30,4 +30,4 @@ run `npm i` from the df-client folder
 
 run `npm i` from the server folder
 
-run `npm start` from bothe the df-client and server folders
+run `npm start` from both the df-client and server folders
