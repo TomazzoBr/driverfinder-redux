@@ -26,4 +26,6 @@
 
 Download the directory
 
-run npm i
+run `npm i` from the df-client folder
+run `npm i` from the server folder
+run `npm start` from bothe the df-client and server folders
