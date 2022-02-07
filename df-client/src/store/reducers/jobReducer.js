@@ -4,6 +4,8 @@ const initState = {
   error: null,
 };
 
-const jobReducer = (state = initState, { payload, id, error }) => {};
+const jobReducer = (state = initState, { payload, id, error }) => {
+  return null;
+};
 
 export default jobReducer;

@@ -14,12 +14,12 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
-    "tailwindcss": "^3.0.18",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npx tailwindcss -i ./src/styles/input.css -o ./public/style.css --watch",
+    "build-p": "postcss ./src/tailwind.css -o ./public/style.css --watch",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +40,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "postcss-cli": "8.x",
+    "postcss-preset-env": "6.x",
+    "tailwindcss": "^3.0.18"
   }
 }

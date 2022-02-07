@@ -4,6 +4,8 @@ const initState = {
   error: null,
 };
 
-const companyReducer = (state = initState, { payload, id, error }) => {};
+const companyReducer = (state = initState, { payload, id, error }) => {
+  return null;
+};
 
 export default companyReducer;

@@ -4,6 +4,8 @@ const initState = {
   error: null,
 };
 
-const driverReducer = (state = initState, { payload, id, error }) => {};
+const driverReducer = (state = initState, { payload, id, error }) => {
+  return null;
+};
 
 export default driverReducer;
