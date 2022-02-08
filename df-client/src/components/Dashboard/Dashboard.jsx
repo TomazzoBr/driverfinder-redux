@@ -1,6 +1,7 @@
 // import { useDispatch } from "react-redux";
-import { Routes, Route, Outlet, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
+import NavBar from "../NavBar/NavBar.jsx";
 import Home from "../Home/Home.jsx";
 import CompanyHome from "../Company/CompanyHome/CompanyHome.jsx";
 import CompanyJobs from "../Company/CompanyJobs/CompanyJobs.jsx";
@@ -11,7 +12,8 @@ import Register from "../Auth/Register/Register.jsx";
 
 export default function Dashboard() {
   return (
-    <div className="flex w-full h-full content-center">
+    <div className="flex flex-col w-full h-full justify-start items-center">
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/company/:id" element={<CompanyHome />} />
