@@ -3,7 +3,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   return (
-    <div className="">
+    <div className="h-screen w-full justify-center content-center bg-greenPrinc">
       <Dashboard />
     </div>
   );

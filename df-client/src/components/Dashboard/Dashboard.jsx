@@ -9,7 +9,7 @@ import Jobs from "../Jobs/Jobs.jsx";
 
 export default function Dashboard() {
   return (
-    <div className="flex w-full h-full justify-center bg-greenPrinc">
+    <div className="flex w-full h-full content-center">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/company/:id" element={<CompanyHome />} />
