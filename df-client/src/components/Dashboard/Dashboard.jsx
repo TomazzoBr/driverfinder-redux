@@ -12,7 +12,7 @@ import Register from "../Auth/Register/Register.jsx";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col w-full h-full justify-start items-center">
+    <div className="flex flex-col w-full h-full justify-start items-center  bg-greenPrinc">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,7 +1,7 @@
 export default function Login() {
   return (
-    <div>
-      <p>This is the login page</p>
+    <div className="flex justify-center content-center">
+      <p>Login form</p>
     </div>
   );
 }
