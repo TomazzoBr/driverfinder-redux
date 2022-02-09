@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Company, CompanySchema } from 'src/company/schemas/companySchema';
+import { Company, CompanySchema } from 'src/schemas/companySchema';
 import { CompanyController } from './company.controller';
 import { CompanyService } from './company.service';
 import { CompanyRepository } from './company.repository';

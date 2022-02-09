@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { FilterQuery, Model } from 'mongoose';
-import { Company, CompanyDocument } from './schemas/companySchema';
+import { Company, CompanyDocument } from '../schemas/companySchema';
 
 @Injectable()
 export class CompanyRepository {

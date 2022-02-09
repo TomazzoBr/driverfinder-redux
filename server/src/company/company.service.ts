@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
 import { UpdateCompanyDto } from 'src/dto/update-company';
 
-import { Company } from './schemas/companySchema';
+import { Company } from '../schemas/companySchema';
 import { CompanyRepository } from './company.repository';
 
 @Injectable()
@@ -27,6 +27,7 @@ export class CompanyService {
       companyName,
       companyLocation,
       goodsType,
+      jobs: [],
     });
   }
 

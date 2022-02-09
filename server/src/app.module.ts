@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 import { CompanyModel } from './company/company.model';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/test'), CompanyModel],
+  imports: [MongooseModule.forRoot('mongodb://localhost/dftest'), CompanyModel],
   controllers: [AppController],
   providers: [AppService],
 })

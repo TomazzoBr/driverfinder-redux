@@ -2,7 +2,7 @@ import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
 import { CreateCompanyDto } from 'src/dto/create-company.dto';
 import { UpdateCompanyDto } from 'src/dto/update-company';
 
-import { Company } from './schemas/companySchema';
+import { Company } from '../schemas/companySchema';
 import { CompanyService } from './company.service';
 
 @Controller('company')

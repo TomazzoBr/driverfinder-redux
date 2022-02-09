@@ -1,4 +1,4 @@
-import { Job } from '../company/schemas/jobSchema';
+import { Job } from '../schemas/jobSchema';
 
 export class CreateCompanyDto {
   companyName: string;
