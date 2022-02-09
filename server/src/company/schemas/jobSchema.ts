@@ -10,7 +10,6 @@ export class Job {
   @Prop({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Company',
-    required: true,
   })
   companyId: Company;
 
