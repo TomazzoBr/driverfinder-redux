@@ -26,6 +26,8 @@ export class CompanyRepository {
     companyFilterQuery: FilterQuery<Company>,
     company: Partial<Company>,
   ): Promise<Company> {
-    return this.companyModel.findOneAndUpdate(companyFilterQuery, company);
+    return this.companyModel.findOneAndUpdate(companyFilterQuery, company, {
+      new: true,
+    });
   }
 }
