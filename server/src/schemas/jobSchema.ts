@@ -11,10 +11,10 @@ export class Job {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Company',
   })
-  companyId: Company;
+  company: Company;
 
   @Prop({ required: true })
-  company: string;
+  jobId: string;
 
   @Prop({ required: true })
   jobName: string;

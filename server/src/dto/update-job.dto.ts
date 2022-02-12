@@ -1,5 +1,7 @@
+import { Company } from 'src/schemas/companySchema';
+
 export class UpdateJobDto {
-  company: string;
+  company: Company;
   jobName: string;
   size: string;
   time: string;
