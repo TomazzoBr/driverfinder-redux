@@ -31,7 +31,7 @@ export class CompanyController {
   }
 
   @Patch(':companyId')
-  async updateUser(
+  async updateCompany(
     @Param('companyId') companyId: string,
     @Body() updateCompanyDto: UpdateCompanyDto,
   ): Promise<Company> {

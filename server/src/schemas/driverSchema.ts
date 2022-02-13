@@ -6,6 +6,9 @@ export type DriverDocument = Driver & Document;
 @Schema()
 export class Driver {
   @Prop({ required: true })
+  driverId: string;
+
+  @Prop({ required: true })
   driverName: string;
 
   @Prop({ required: true })
